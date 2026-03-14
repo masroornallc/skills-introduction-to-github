@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumina Clean — Premium professional cleaning services. Residential, commercial & deep cleaning with cutting-edge equipment and trained specialists." />
+  <title>Lumina Clean — Premium Cleaning Services</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Loader ─────────────────────────────────────────────── -->
+  <div id="loader" role="status" aria-label="Loading">
+    <div class="loader-logo">LUMINA<span style="color:#7c3aed">✦</span>CLEAN</div>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ── Cursor ─────────────────────────────────────────────── -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ── Scroll Progress ────────────────────────────────────── -->
+  <div id="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo" aria-label="Lumina Clean - Home">
+      <div class="nav-logo-icon" aria-hidden="true">✦</div>
+      <div>LUMINA<span>CLEAN</span></div>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <div class="nav-hamburger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ── Hero ───────────────────────────────────────────────── -->
+  <section id="hero" aria-label="Hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-bg-gradient" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot" aria-hidden="true"></span>
+        Redefining Cleanliness Since 2018
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line">Immaculate Spaces.</span>
+        <span class="line gradient-text">Elevated Living.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        We blend cutting-edge technology with meticulous craftsmanship to transform every
+        space into a pristine sanctuary — every single time.
+        <span class="typewriter-target" data-texts='["Residential Cleaning.", "Commercial Spaces.", "Deep Sanitization.", "Move-in/out Service.", "Post-Construction."]' aria-live="polite">Residential Cleaning.</span>
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          Book Your Clean
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#services" class="btn-secondary">
+          Explore Services
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v4l3 3"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-stats" aria-label="Key statistics">
+        <div class="hero-stat">
+          <div class="hero-stat-value">12K+</div>
+          <div class="hero-stat-label">Cleans Done</div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">4.98★</div>
+          <div class="hero-stat-label">Avg Rating</div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">99%</div>
+          <div class="hero-stat-label">Satisfaction</div>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">6 Yrs</div>
+          <div class="hero-stat-label">Experience</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span class="scroll-hint-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Marquee ─────────────────────────────────────────────── -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-inner">
+      <!-- first copy -->
+      <div class="marquee-item"><span class="marquee-dot"></span>Residential Cleaning</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Commercial Spaces</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Deep Sanitization</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Eco-Friendly Products</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>24/7 Availability</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Trained Specialists</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>100% Satisfaction Guarantee</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Post-Construction</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Move-In / Move-Out</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Same-Day Booking</div>
+      <!-- duplicate for seamless loop -->
+      <div class="marquee-item"><span class="marquee-dot"></span>Residential Cleaning</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Commercial Spaces</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Deep Sanitization</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Eco-Friendly Products</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>24/7 Availability</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Trained Specialists</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>100% Satisfaction Guarantee</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Post-Construction</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Move-In / Move-Out</div>
+      <div class="marquee-item"><span class="marquee-dot"></span>Same-Day Booking</div>
+    </div>
+  </div>
+
+  <!-- ── Services ───────────────────────────────────────────── -->
+  <section id="services" class="section" aria-label="Services">
+    <div class="section-inner">
+      <div class="services-header">
+        <div class="section-badge reveal" aria-label="Section label">Our Services</div>
+        <h2 class="section-title reveal reveal-delay-1">Everything your space needs,<br/>all under one roof.</h2>
+        <p class="section-subtitle reveal reveal-delay-2">From weekly maintenance to deep industrial cleans — our specialists are equipped for every challenge.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card card-cyan reveal reveal-delay-1" tabindex="0">
+          <div class="service-number" aria-hidden="true">01</div>
+          <div class="service-icon-wrap" style="background:rgba(0,212,255,0.12);" aria-hidden="true">🏠</div>
+          <h3 class="service-title">Residential Cleaning</h3>
+          <p class="service-desc">Comprehensive home cleaning tailored to your lifestyle — from weekly tidying to seasonal deep cleans.</p>
+          <ul class="service-features" aria-label="Features">
+            <li class="service-feature"><span class="service-feature-dot" style="background:#00d4ff" aria-hidden="true"></span>All rooms &amp; surfaces</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#00d4ff" aria-hidden="true"></span>Eco-friendly products</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#00d4ff" aria-hidden="true"></span>Background-checked staff</li>
+          </ul>
+          <span class="service-link" style="color:#00d4ff">Learn More →</span>
+        </article>
+
+        <article class="service-card card-purple reveal reveal-delay-2" tabindex="0">
+          <div class="service-number" aria-hidden="true">02</div>
+          <div class="service-icon-wrap" style="background:rgba(124,58,237,0.12);" aria-hidden="true">🏢</div>
+          <h3 class="service-title">Commercial Cleaning</h3>
+          <p class="service-desc">Keep your business premises spotless and professional — before hours, after hours or on demand.</p>
+          <ul class="service-features" aria-label="Features">
+            <li class="service-feature"><span class="service-feature-dot" style="background:#7c3aed" aria-hidden="true"></span>Offices &amp; co-working spaces</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#7c3aed" aria-hidden="true"></span>Retail &amp; hospitality</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#7c3aed" aria-hidden="true"></span>Flexible scheduling</li>
+          </ul>
+          <span class="service-link" style="color:#7c3aed">Learn More →</span>
+        </article>
+
+        <article class="service-card card-gold reveal reveal-delay-3" tabindex="0">
+          <div class="service-number" aria-hidden="true">03</div>
+          <div class="service-icon-wrap" style="background:rgba(251,191,36,0.1);" aria-hidden="true">🔬</div>
+          <h3 class="service-title">Deep Sanitization</h3>
+          <p class="service-desc">Hospital-grade disinfection using HEPA filtration, UV-C light and EPA-registered antimicrobials.</p>
+          <ul class="service-features" aria-label="Features">
+            <li class="service-feature"><span class="service-feature-dot" style="background:#fbbf24" aria-hidden="true"></span>99.9% pathogen elimination</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#fbbf24" aria-hidden="true"></span>Post-illness protocols</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#fbbf24" aria-hidden="true"></span>Certified technicians</li>
+          </ul>
+          <span class="service-link" style="color:#fbbf24">Learn More →</span>
+        </article>
+
+        <article class="service-card card-cyan reveal reveal-delay-1" tabindex="0">
+          <div class="service-number" aria-hidden="true">04</div>
+          <div class="service-icon-wrap" style="background:rgba(0,212,255,0.12);" aria-hidden="true">📦</div>
+          <h3 class="service-title">Move-In / Move-Out</h3>
+          <p class="service-desc">Seamless transitions — leave your old space immaculate or arrive to a sparkling new home.</p>
+          <ul class="service-features" aria-label="Features">
+            <li class="service-feature"><span class="service-feature-dot" style="background:#00d4ff" aria-hidden="true"></span>Inside cabinets &amp; appliances</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#00d4ff" aria-hidden="true"></span>Window tracks &amp; frames</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#00d4ff" aria-hidden="true"></span>Security deposit protection</li>
+          </ul>
+          <span class="service-link" style="color:#00d4ff">Learn More →</span>
+        </article>
+
+        <article class="service-card card-purple reveal reveal-delay-2" tabindex="0">
+          <div class="service-number" aria-hidden="true">05</div>
+          <div class="service-icon-wrap" style="background:rgba(124,58,237,0.12);" aria-hidden="true">🏗️</div>
+          <h3 class="service-title">Post-Construction</h3>
+          <p class="service-desc">Industrial-grade removal of dust, debris and construction residue — reveal your new space in full glory.</p>
+          <ul class="service-features" aria-label="Features">
+            <li class="service-feature"><span class="service-feature-dot" style="background:#7c3aed" aria-hidden="true"></span>Dust &amp; drywall removal</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#7c3aed" aria-hidden="true"></span>Paint &amp; adhesive clean-up</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#7c3aed" aria-hidden="true"></span>Full floor-to-ceiling service</li>
+          </ul>
+          <span class="service-link" style="color:#7c3aed">Learn More →</span>
+        </article>
+
+        <article class="service-card card-gold reveal reveal-delay-3" tabindex="0">
+          <div class="service-number" aria-hidden="true">06</div>
+          <div class="service-icon-wrap" style="background:rgba(251,191,36,0.1);" aria-hidden="true">✨</div>
+          <h3 class="service-title">Premium Add-Ons</h3>
+          <p class="service-desc">Elevate your clean with specialty services — carpet steam, oven restoration, balcony power-wash and more.</p>
+          <ul class="service-features" aria-label="Features">
+            <li class="service-feature"><span class="service-feature-dot" style="background:#fbbf24" aria-hidden="true"></span>Carpet &amp; upholstery steam</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#fbbf24" aria-hidden="true"></span>Fridge &amp; oven deep clean</li>
+            <li class="service-feature"><span class="service-feature-dot" style="background:#fbbf24" aria-hidden="true"></span>Exterior power washing</li>
+          </ul>
+          <span class="service-link" style="color:#fbbf24">Learn More →</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ───────────────────────────────────────────────── -->
+  <section id="stats" class="section" aria-label="Key statistics">
+    <div class="section-inner">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-value" data-target="12400" data-suffix="+" aria-live="polite">0+</div>
+          <div class="stat-label">Cleans Completed</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-value" data-target="4.98" data-suffix="★" data-decimals="2" aria-live="polite">0★</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-value" data-target="320" data-suffix="+" aria-live="polite">0+</div>
+          <div class="stat-label">Active Clients</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-value" data-target="99" data-suffix="%" aria-live="polite">0%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ─────────────────────────────────────────────── -->
+  <section id="process" class="section" aria-label="Our process">
+    <div class="section-inner">
+      <div class="process-header">
+        <div class="section-badge cyan reveal">How It Works</div>
+        <h2 class="section-title reveal reveal-delay-1">A flawless process,<br/>every time.</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Our streamlined 5-step protocol ensures consistent, exceptional results — no surprises, ever.</p>
+      </div>
+
+      <div class="process-timeline" role="list">
+        <div class="process-line" aria-hidden="true"></div>
+        <div class="process-line-fill" aria-hidden="true"></div>
+
+        <div class="process-step reveal" role="listitem">
+          <div class="process-step-num" aria-label="Step 1">01</div>
+          <div class="process-step-body">
+            <h3 class="process-step-title">Book &amp; Consult</h3>
+            <p class="process-step-desc">Choose your service, select a time slot, and tell us your specific needs. Our concierge team reaches out within 30 minutes to confirm and customise your plan.</p>
+            <span class="process-step-tag">~5 minutes</span>
+          </div>
+        </div>
+
+        <div class="process-step reveal reveal-delay-1" role="listitem">
+          <div class="process-step-num" aria-label="Step 2">02</div>
+          <div class="process-step-body">
+            <h3 class="process-step-title">Pre-Clean Assessment</h3>
+            <p class="process-step-desc">Our team performs a rapid walkthrough to identify problem areas, delicate surfaces and special requirements — ensuring the right tools and products are deployed.</p>
+            <span class="process-step-tag">On-site prep</span>
+          </div>
+        </div>
+
+        <div class="process-step reveal reveal-delay-2" role="listitem">
+          <div class="process-step-num" aria-label="Step 3">03</div>
+          <div class="process-step-body">
+            <h3 class="process-step-title">Precision Cleaning</h3>
+            <p class="process-step-desc">Our certified specialists execute the clean systematically — top to bottom, room by room — using hospital-grade equipment and eco-certified products.</p>
+            <span class="process-step-tag">Core service</span>
+          </div>
+        </div>
+
+        <div class="process-step reveal reveal-delay-3" role="listitem">
+          <div class="process-step-num" aria-label="Step 4">04</div>
+          <div class="process-step-body">
+            <h3 class="process-step-title">Quality Inspection</h3>
+            <p class="process-step-desc">A dedicated quality-control agent inspects every zone against our 84-point checklist before we consider the job complete.</p>
+            <span class="process-step-tag">84-point checklist</span>
+          </div>
+        </div>
+
+        <div class="process-step reveal reveal-delay-4" role="listitem">
+          <div class="process-step-num" aria-label="Step 5">05</div>
+          <div class="process-step-body">
+            <h3 class="process-step-title">Your Satisfaction Report</h3>
+            <p class="process-step-desc">Receive a detailed report with photos and checklist sign-off. Not 100% happy? We return free of charge within 24 hours — guaranteed.</p>
+            <span class="process-step-tag">100% guarantee</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ────────────────────────────────────────── -->
+  <section id="testimonials" class="section" aria-label="Customer reviews">
+    <div class="section-inner">
+      <div class="testimonials-header">
+        <div class="section-badge gold reveal">Testimonials</div>
+        <h2 class="section-title reveal reveal-delay-1">Loved by homeowners<br/>and businesses alike.</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Don't just take our word for it — hear from those who've experienced the Lumina difference.</p>
+      </div>
+
+      <div class="testimonials-track-wrap reveal reveal-delay-2">
+        <div class="testimonials-track" role="list" aria-label="Customer reviews">
+          <div class="testimonials-slider">
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote-icon" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 stars">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="testimonial-text">"I've used dozens of cleaning services over the years, but Lumina Clean is in a completely different league. My apartment has never looked this good — every surface gleams and the attention to detail is extraordinary."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">👩</div>
+                <div>
+                  <div class="testimonial-name">Sarah Mitchell</div>
+                  <div class="testimonial-role">Homeowner, Manhattan</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote-icon" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 stars">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="testimonial-text">"We switched our entire office complex (3 floors, 180 staff) to Lumina and productivity instantly improved. The space feels alive, employees are happier, and clients always comment on how fresh everything smells."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">👨‍💼</div>
+                <div>
+                  <div class="testimonial-name">James Okafor</div>
+                  <div class="testimonial-role">CEO, Vertex Capital Group</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote-icon" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 stars">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="testimonial-text">"The post-construction clean they did on our new restaurant was flawless. Dust completely gone, surfaces polished, even the ventilation was sorted. We opened two days ahead of schedule because of them."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">👩‍🍳</div>
+                <div>
+                  <div class="testimonial-name">Priya Anand</div>
+                  <div class="testimonial-role">Restaurant Owner, Brooklyn</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card" role="listitem">
+              <div class="testimonial-quote-icon" aria-hidden="true">"</div>
+              <div class="testimonial-stars" aria-label="5 stars">
+                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+              </div>
+              <p class="testimonial-text">"I have a 4-year-old and two large dogs — the team handled everything with patience and care. No harsh chemicals, everything kid- and pet-safe, and the house smelled incredible. They've got a client for life."</p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">👨‍👩‍👧</div>
+                <div>
+                  <div class="testimonial-name">Marcus &amp; Elena Torres</div>
+                  <div class="testimonial-role">Family, Austin TX</div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-controls" aria-label="Carousel controls">
+        <button class="t-btn" id="t-prev" aria-label="Previous review">←</button>
+        <div class="t-dots" role="tablist" aria-label="Review pages">
+          <div class="t-dot active" role="tab" aria-label="Review 1" tabindex="0"></div>
+          <div class="t-dot" role="tab" aria-label="Review 2" tabindex="0"></div>
+          <div class="t-dot" role="tab" aria-label="Review 3" tabindex="0"></div>
+          <div class="t-dot" role="tab" aria-label="Review 4" tabindex="0"></div>
+        </div>
+        <button class="t-btn" id="t-next" aria-label="Next review">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Before / After Gallery ──────────────────────────────── -->
+  <section id="gallery" class="section" aria-label="Before and after results">
+    <div class="section-inner">
+      <div class="gallery-header">
+        <div class="section-badge reveal">Transformations</div>
+        <h2 class="section-title reveal reveal-delay-1">See the difference<br/>we make.</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Drag the slider left &amp; right to reveal the stunning before-and-after results of our work.</p>
+      </div>
+
+      <div class="before-after-grid">
+
+        <div class="before-after-card reveal" aria-label="Before and after: Kitchen transformation" role="img">
+          <div class="ba-before">
+            <div>
+              <div class="room-icon room-dirty" aria-hidden="true">🍳</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.4)">Grease &amp; grime</div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div>
+              <div class="room-icon room-clean" aria-hidden="true">✨</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.85)">Sparkling clean</div>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-handle" aria-hidden="true">⇔</div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+        <div class="before-after-card reveal reveal-delay-1" aria-label="Before and after: Office transformation" role="img">
+          <div class="ba-before">
+            <div>
+              <div class="room-icon room-dirty" aria-hidden="true">💼</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.4)">Dusty &amp; cluttered</div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div>
+              <div class="room-icon room-clean" aria-hidden="true">🏆</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.85)">Professional &amp; fresh</div>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-handle" aria-hidden="true">⇔</div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+        <div class="before-after-card reveal reveal-delay-2" aria-label="Before and after: Bathroom transformation" role="img">
+          <div class="ba-before">
+            <div>
+              <div class="room-icon room-dirty" aria-hidden="true">🚿</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.4)">Limescale &amp; mold</div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div>
+              <div class="room-icon room-clean" aria-hidden="true">💎</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.85)">Hotel-standard clean</div>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-handle" aria-hidden="true">⇔</div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+        <div class="before-after-card reveal reveal-delay-3" aria-label="Before and after: Living room transformation" role="img">
+          <div class="ba-before">
+            <div>
+              <div class="room-icon room-dirty" aria-hidden="true">🛋️</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.4)">Pet hair &amp; stains</div>
+            </div>
+          </div>
+          <div class="ba-after">
+            <div>
+              <div class="room-icon room-clean" aria-hidden="true">🌟</div>
+              <div style="margin-top:12px;font-size:1rem;color:rgba(255,255,255,0.85)">Refreshed &amp; pristine</div>
+            </div>
+          </div>
+          <div class="ba-divider" aria-hidden="true"></div>
+          <div class="ba-handle" aria-hidden="true">⇔</div>
+          <span class="ba-label ba-label-before">Before</span>
+          <span class="ba-label ba-label-after">After</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Pricing ──────────────────────────────────────────────── -->
+  <section id="pricing" class="section" aria-label="Pricing plans">
+    <div class="section-inner">
+      <div class="pricing-header">
+        <div class="section-badge cyan reveal">Pricing</div>
+        <h2 class="section-title reveal reveal-delay-1">Transparent pricing.<br/>No hidden fees.</h2>
+        <div class="pricing-toggle-wrap reveal reveal-delay-2" role="group" aria-label="Billing period">
+          <span class="pricing-toggle-label">Monthly</span>
+          <div class="pricing-toggle" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle annual billing">
+            <div class="pricing-toggle-knob" aria-hidden="true"></div>
+          </div>
+          <span class="pricing-toggle-label">Annual</span>
+          <span class="pricing-badge-save">Save 20%</span>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal reveal-delay-1">
+          <div class="pricing-tier">Starter</div>
+          <div class="pricing-name">Essential Clean</div>
+          <div class="pricing-price" aria-label="Price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">89</span>
+            <span class="pricing-period">/visit</span>
+          </div>
+          <p class="pricing-desc">Perfect for apartments and small homes needing a regular, reliable clean.</p>
+          <ul class="pricing-features" aria-label="Plan features">
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Up to 2 bedrooms</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Kitchen &amp; bathrooms</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Eco-friendly products</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Same-day booking</li>
+            <li class="pricing-feature"><span class="pf-check no" aria-hidden="true">—</span>Deep clean add-ons</li>
+            <li class="pricing-feature"><span class="pf-check no" aria-hidden="true">—</span>Priority scheduling</li>
+          </ul>
+          <button class="pricing-btn pricing-btn-outline" aria-label="Choose Essential Clean plan">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card featured reveal reveal-delay-2" aria-label="Most popular plan">
+          <div class="pricing-featured-badge" aria-label="Most popular">Most Popular</div>
+          <div class="pricing-tier">Professional</div>
+          <div class="pricing-name">Complete Clean</div>
+          <div class="pricing-price" aria-label="Price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">179</span>
+            <span class="pricing-period">/visit</span>
+          </div>
+          <p class="pricing-desc">Our most loved plan — covers the whole home including specialist areas and add-ons.</p>
+          <ul class="pricing-features" aria-label="Plan features">
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Up to 5 bedrooms</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>All rooms &amp; surfaces</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Deep clean add-ons</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Priority scheduling</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>84-point quality check</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Re-clean guarantee</li>
+          </ul>
+          <button class="pricing-btn pricing-btn-filled" aria-label="Choose Complete Clean plan">Choose Plan</button>
+        </div>
+
+        <div class="pricing-card reveal reveal-delay-3">
+          <div class="pricing-tier">Enterprise</div>
+          <div class="pricing-name">Corporate Suite</div>
+          <div class="pricing-price" aria-label="Price">
+            <span class="pricing-currency">$</span>
+            <span class="pricing-amount">299</span>
+            <span class="pricing-period">/visit</span>
+          </div>
+          <p class="pricing-desc">Tailored end-to-end commercial cleaning programs for offices, hotels and facilities.</p>
+          <ul class="pricing-features" aria-label="Plan features">
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Unlimited sq. footage</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Dedicated team assigned</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>24/7 emergency service</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Monthly deep cleans</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Account manager</li>
+            <li class="pricing-feature included"><span class="pf-check yes" aria-hidden="true">✓</span>Custom SLA contracts</li>
+          </ul>
+          <button class="pricing-btn pricing-btn-outline" aria-label="Choose Corporate Suite plan">Get Quote</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Team ────────────────────────────────────────────────── -->
+  <section id="team" class="section" aria-label="Our team">
+    <div class="section-inner">
+      <div class="team-header">
+        <div class="section-badge reveal">Meet the Team</div>
+        <h2 class="section-title reveal reveal-delay-1">The specialists<br/>behind the shine.</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Every member of our team is background-checked, fully insured, and trained to our exacting standards.</p>
+      </div>
+
+      <div class="team-grid">
+
+        <div class="team-card reveal reveal-delay-1">
+          <div class="team-avatar" aria-hidden="true">👩‍💼</div>
+          <div class="team-name">Alexandra Reyes</div>
+          <div class="team-role">Founder &amp; CEO</div>
+          <p class="team-bio">15 years in premium facilities management. Alexandra built Lumina on one principle: uncompromising quality.</p>
+          <div class="team-social" aria-label="Social links">
+            <div class="team-social-btn" aria-label="LinkedIn" tabindex="0">in</div>
+            <div class="team-social-btn" aria-label="Twitter" tabindex="0">𝕏</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-2">
+          <div class="team-avatar" aria-hidden="true">👨‍🔬</div>
+          <div class="team-name">Dr. Marcus Liu</div>
+          <div class="team-role">Head of Sanitation</div>
+          <p class="team-bio">Microbiologist turned cleaning innovator. Marcus develops our hospital-grade protocols and product formulations.</p>
+          <div class="team-social" aria-label="Social links">
+            <div class="team-social-btn" aria-label="LinkedIn" tabindex="0">in</div>
+            <div class="team-social-btn" aria-label="Twitter" tabindex="0">𝕏</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-3">
+          <div class="team-avatar" aria-hidden="true">👩‍🎨</div>
+          <div class="team-name">Fatima Al-Hassan</div>
+          <div class="team-role">Operations Director</div>
+          <p class="team-bio">Expert scheduler and logistics specialist. Fatima ensures every team arrives prepared and on time, every time.</p>
+          <div class="team-social" aria-label="Social links">
+            <div class="team-social-btn" aria-label="LinkedIn" tabindex="0">in</div>
+            <div class="team-social-btn" aria-label="Twitter" tabindex="0">𝕏</div>
+          </div>
+        </div>
+
+        <div class="team-card reveal reveal-delay-4">
+          <div class="team-avatar" aria-hidden="true">👨‍💻</div>
+          <div class="team-name">Tyler Brooks</div>
+          <div class="team-role">Quality Assurance Lead</div>
+          <p class="team-bio">Tyler designed our 84-point inspection checklist and personally trains every quality-control auditor on the team.</p>
+          <div class="team-social" aria-label="Social links">
+            <div class="team-social-btn" aria-label="LinkedIn" tabindex="0">in</div>
+            <div class="team-social-btn" aria-label="Twitter" tabindex="0">𝕏</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ─────────────────────────────────────────────── -->
+  <section id="contact" class="section" aria-label="Contact us">
+    <div class="section-inner">
+      <div class="contact-grid">
+
+        <div>
+          <div class="section-badge gold reveal">Contact Us</div>
+          <h2 class="contact-info-title reveal reveal-delay-1">Ready for the cleanest<br/>space of your life?</h2>
+          <p class="contact-info-sub reveal reveal-delay-2">Get a free, no-obligation quote in under 60 seconds. Our team is available 7 days a week and will respond within the hour.</p>
+
+          <div class="contact-methods reveal reveal-delay-3" aria-label="Contact methods">
+            <div class="contact-method">
+              <div class="contact-method-icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="contact-method-label">Phone</div>
+                <div class="contact-method-value">+1 (800) 586-4622</div>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon" aria-hidden="true">✉️</div>
+              <div>
+                <div class="contact-method-label">Email</div>
+                <div class="contact-method-value">hello@luminaclean.com</div>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon" aria-hidden="true">📍</div>
+              <div>
+                <div class="contact-method-label">Headquarters</div>
+                <div class="contact-method-value">147 West 42nd St, New York, NY 10036</div>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon" aria-hidden="true">🕐</div>
+              <div>
+                <div class="contact-method-label">Hours</div>
+                <div class="contact-method-value">Mon–Sun, 7:00 AM – 10:00 PM</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <form id="contact-form" novalidate aria-label="Quote request form">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fname">First Name</label>
+                <input class="form-input" id="fname" name="fname" type="text" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lname">Last Name</label>
+                <input class="form-input" id="lname" name="lname" type="text" placeholder="Smith" required autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input class="form-input" id="email" name="email" type="email" placeholder="jane@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Service Type</label>
+              <select class="form-select" id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option value="residential">Residential Cleaning</option>
+                <option value="commercial">Commercial Cleaning</option>
+                <option value="deep">Deep Sanitization</option>
+                <option value="movein">Move-In / Move-Out</option>
+                <option value="construction">Post-Construction</option>
+                <option value="addon">Premium Add-Ons</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Tell us more</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="Describe your space, any specific requirements, preferred dates…"></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              Send My Quote Request →
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <footer id="footer" role="contentinfo">
+    <div class="section-inner">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand-name">
+            <span style="font-size:1.2rem">✦</span> LUMINA CLEAN
+          </div>
+          <p class="footer-brand-desc">Redefining what clean means — one space at a time. Trusted by 320+ homeowners and businesses across New York.</p>
+          <div class="footer-social" aria-label="Social media">
+            <div class="footer-social-btn" aria-label="Instagram" tabindex="0" role="link">📸</div>
+            <div class="footer-social-btn" aria-label="Facebook" tabindex="0" role="link">👍</div>
+            <div class="footer-social-btn" aria-label="Twitter" tabindex="0" role="link">𝕏</div>
+            <div class="footer-social-btn" aria-label="LinkedIn" tabindex="0" role="link">in</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Residential</a></li>
+            <li><a href="#services">Commercial</a></li>
+            <li><a href="#services">Deep Sanitization</a></li>
+            <li><a href="#services">Move-In/Out</a></li>
+            <li><a href="#services">Post-Construction</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#team">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Careers</a></li>
+            <li><a href="#contact">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Support</div>
+          <ul class="footer-links">
+            <li><a href="#contact">Get a Quote</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#contact">Partner Program</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2024 <span>Lumina Clean LLC</span>. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Floating CTA ────────────────────────────────────────── -->
+  <div id="floating-cta" aria-label="Scroll to contact">
+    <button class="floating-cta-btn" aria-label="Book now">
+      ✦ Book Now
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
